@@ -41,7 +41,7 @@ void addingstudent()
 		}
 		else
 		{
-			"error in Opening File :(...Try Again! ";
+			cout<<"Error in Opening File :(...Try Again! ";
 		}
 
 
@@ -205,6 +205,7 @@ void deleting()
 	if (!(deleting.is_open()) && (temp.is_open()))
 	{
 		cout << "Error in Opening File!..Try Again...! ";
+		return;
 
 	}
 	else
@@ -261,9 +262,9 @@ int menu()
 		}
 		else if (choice == 2)
 		{
-			{
+			
 				displayingrecords();
-			}
+			
 
 		}
 		else if (choice == 3)
